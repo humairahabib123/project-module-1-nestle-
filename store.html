@@ -26,29 +26,84 @@
     <!-- navbar starts -->
     <div>
       <div class="navbar navbar-expand-lg px-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav"
-            aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynav">
-            <div class="navbar-nav linkhead">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="about.html">About Us</a>
-              <a class="nav-link" href="store.html">Store</a>
-              <div class="contact d-lg-flex">
-                <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i></a>
-                <a class="nav-link" href="cart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
-              </div>
-            </div>
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav"
+                  aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynav">
+                  <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link" href="about.html">About Us</a>
+                      <a class="nav-link" href="store.html">Store</a>
+                      <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i></a>
+                      <div class="d-lg-none d-sm-block d-md-block cart-icon"> <i
+                              class="fa-sharp fa-solid fa-cart-shopping"></i>
+                      </div>
+                      <!-- cart icon start -->
+                      <div class="cart-box d-lg-block d-md-none d-sm-none">
+                          <div class="cart-icon ">
+                              <i class="fa-sharp fa-solid fa-cart-shopping cart-lg non-empty"></i>
+                          </div>
+                          <div class="cart-window hide">
+                              <h2>shopping bag</h2>
+                              <div class="cart-wrapper">
+                                  <!-- item 1 -->
+                                  <div class="cart-item row mt-3">
+                                      <div class=" col-5">
+                                          <img src="./storeimages/cerelac/cerelac-2tins.jpg" alt="">
+                                      </div>
+                                      <div class="details col-6">
+                                          <h3>Item Name:</h3>
+                                          <p>
+                                              <span class="quantity d-block mt-3">Quantity: 1</span>
+                                              <span class="price d-block">Price: 0.00pkr</span>
+                                          </p>
 
+                                      </div>
+                                      <div class="cancel col-1"><i class="fa-solid fa-trash-can"></i></div>
+                                  </div>
+                                  <!-- item 2 -->
+                                  <div class="row cart-item mt-2">
+                                      <div class=" col-3">
+                                          <img src="images/storeimages/cerelac/cerelac-2tins.jpg" alt="">
+                                      </div>
+                                      <div class="details col-8">
+                                          <h3>Item Name:</h3>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                              <span class="quantity d-block mt-3">Quantity: 1</span>
+                                              <span class="price d-block">Price: 0.00pkr</span>
+                                          </p>
+
+                                      </div>
+                                      <div class="cancel col-1"><i class="fa-solid fa-trash-can"></i></div>
+                                  </div>
+
+
+                              </div>
+                              <div class="subtotal text-muted ">
+                                  subtotal: 0.00PKR
+
+                              </div>
+                              <div class="checkout">
+                                  checkout
+                              </div>
+                              <div class="view-cart">
+                                  view Cart
+                              </div>
+
+                          </div>
+                      </div>
+                      <!-- cart icon end -->
+                  </div>
+
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-    </nav>
-    <!-- navbar ends -->
+  </div>
+  </nav>
+  <!-- navbar ends -->
   </header>
   <!-- header ends -->
 
@@ -67,14 +122,15 @@
       </form>
     </div>
   </div>
-  <!-- search bar start -->
+  <!-- search bar end -->
 
   <!--Cerelac product items start -->
+
+  <h1 class="container-fluid" style="text-align:center; padding-top: 3%;">Cerelac</h1>
   <div class="container-fluid" id="product-list">
-    <h1 class="container-fluid" style="text-align: center;padding-top: 3%;">Cerelac</h1>
     <div class="container-fluid row store-items" id="cerelac">
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac1">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac-2tins.jpg" class="card-img-top store-img" alt="">
@@ -96,7 +152,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac2">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac-apple-cherry.jpg" class="card-img-top store-img" alt="">
@@ -118,7 +174,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac3">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac-yogurt.jpeg" class="card-img-top store-img" alt="">
@@ -140,7 +196,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac4">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/Cerelac-mix-Food(tin).jpg" class="card-img-top store-img" alt="">
@@ -162,7 +218,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac5">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac-orange-banana.jpg" class="card-img-top store-img" alt="">
@@ -184,7 +240,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac6">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac-puffs.jpg" class="card-img-top store-img" alt="">
@@ -206,7 +262,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac7">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac-rice(tin).jpg" class="card-img-top store-img" alt="">
@@ -228,7 +284,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac8">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac-wheat(soft).webp" class="card-img-top store-img" alt="">
@@ -250,7 +306,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac9">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac-wheat-400gm.jpg" class="card-img-top store-img" alt="">
@@ -272,7 +328,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac10">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac-wheat-orange.jpg" class="card-img-top store-img" alt="">
@@ -294,7 +350,7 @@
       </div>
       <!--end of single store item-->
       <!-- single item -->
-      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelac11">
         <div class="card ">
           <div class="img-container">
             <img src="./storeimages/cerelac/cerelac_honey_wheat(tin).jpg" class="card-img-top store-img" alt="">
@@ -317,482 +373,479 @@
       <!--end of single store item-->
 
     </div>
-  </div>
-  <!-- Cerelac product items ends -->
+
+    <!-- Cerelac product items ends -->
 
 
     <!-- PureLife product items start -->
-    <div class="container-fluid" id="product-list">
-      <h1 class="container-fluid" style="text-align: center;padding-top: 3%;">PureLife WaterBottles</h1>
-      <div class="container-fluid row store-items" id="cerelac">
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-          <div class="card ">
-            <div class="img-container">
-              <img src="./storeimages/purelife/no1-1500ml.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">WaterBottle 1500 ML</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-  
-              </div>
-            </div>
-  
-  
+    <h1 class="container-fluid" style="text-align: center;padding-top: 3%;">PureLife WaterBottles</h1>
+    <div class="container-fluid row store-items" id="cerelac">
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="purelife1">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/purelife/no1-1500ml.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
           </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-          <div class="card ">
-            <div class="img-container">
-              <img src="./storeimages/purelife/n02-5l.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">WaterBottle 1500 ML</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
             </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">WaterBottle 5 L</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-  
-              </div>
-            </div>
-  
-  
           </div>
-          <!-- end of card-->
+
+
         </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-          <div class="card ">
-            <div class="img-container">
-              <img src="./storeimages/purelife/n03- 1L.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">WaterBottle 1 L</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-  
-              </div>
-            </div>
-  
-  
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-          <div class="card ">
-            <div class="img-container">
-              <img src="./storeimages/purelife/n04-550ml.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">WaterBottle 550 ML</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-  
-              </div>
-            </div>
-  
-  
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-          <div class="card ">
-            <div class="img-container">
-              <img src="./storeimages/purelife/n05- 330ml.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">WaterBottle 330 ML</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-  
-              </div>
-            </div>
-  
-  
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-          <div class="card ">
-            <div class="img-container">
-              <img src="./storeimages/purelife/no6-500ml.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">WaterBottle 500 ML</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-  
-              </div>
-            </div>
-  
-  
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-          <div class="card ">
-            <div class="img-container">
-              <img src="./storeimages/purelife/no7-19lL.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">WaterBottle 19 LL</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-  
-              </div>
-            </div>
-  
-  
-          </div>
-          <!-- end of card-->
-        </div>
-        <!--end of single store item-->
-        <!-- single item -->
-        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-          <div class="card ">
-            <div class="img-container">
-              <img src="./storeimages/purelife/no8-5L.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">WaterBottle 5 L</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-  
-              </div>
-            </div>
-  
-  
-          </div>
-          <!-- end of card-->
-        </div>
-      
-  
+        <!-- end of card-->
       </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="purelife2">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/purelife/n02-5l.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">WaterBottle 5 L</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="purelife3">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/purelife/n03- 1L.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">WaterBottle 1 L</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="purelife4">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/purelife/n04-550ml.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">WaterBottle 550 ML</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="purelife5">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/purelife/n05- 330ml.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">WaterBottle 330 ML</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="purelife6">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/purelife/no6-500ml.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">WaterBottle 500 ML</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="purelife7">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/purelife/no7-19lL.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">WaterBottle 19 LL</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="purelife8">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/purelife/no8-5L.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">WaterBottle 5 L</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+
+
     </div>
+
     <!--  PureLife product items ends -->
 
 
 
-      <!-- Lactogrow product items start -->
-      <div class="container-fluid" id="product-list">
-        <h1 class="container-fluid" style="text-align: center;padding-top: 3%;">LactoGrow</h1>
-        <div class="container-fluid row store-items" id="cerelac">
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/lactogrow/no1- 800gm.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">Lactogrow(3) 800 G</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
+    <!-- Lactogrow product items start -->
+    <h1 class="container-fluid" style="text-align: center;padding-top: 3%;">LactoGrow</h1>
+    <div class="container-fluid row store-items" id="cerelac">
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="lactogrow1">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/lactogrow/no1- 800gm.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
           </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/lactogrow/no2-200gm.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">Lactogrow(3) 200 G</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/lactogrow/no3-400g.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">Lactogrow(3) 400 G</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/lactogrow/no4-1.3kg.jpg "class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">Lactogrow(3) 1.3 KG</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/lactogrow/no5-1kg.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">Lactogrow(4) 1 KG</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/lactogrow/no6-350gm.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">Lactogrow(3) 350 G</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-         
-        
-    
-        </div>
-      </div>
-      <!--  Lactogrow product items ends -->
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Lactogrow(3) 800 G</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
 
-       <!-- EveryDay product items start -->
-       <div class="container-fluid" id="product-list">
-        <h1 class="container-fluid" style="text-align: center;padding-top: 3%;">EveryDay</h1>
-        <div class="container-fluid row store-items" id="cerelac">
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/everyday/no1-850g.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">EveryDay 850 G</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
             </div>
-            <!-- end of card-->
           </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/everyday/no2-230g.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">EveryDay 230 G</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/everyday/no3-560g.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">EveryDay 560 G</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/everyday/no4-350g.jpg"class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">EveryDay 350 G</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/everyday/no5-1.8kg.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">EveryDay 1.8 KG</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-          <!-- single item -->
-          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="cerelacs">
-            <div class="card ">
-              <div class="img-container">
-                <img src="./storeimages/everyday/no6-1.2kg.jpg" class="card-img-top store-img" alt="">
-                <span class="store-item-icon">
-                  <i class="fas fa-shopping-cart"></i>
-                </span>
-              </div>
-              <div class="card-body">
-                <div class="card-text d-flex justify-content-between text-capitalize">
-                  <h5 id="store-item-name">EveryDay 1.2 KG</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-    
-                </div>
-              </div>
-    
-    
-            </div>
-            <!-- end of card-->
-          </div>
-          <!--end of single store item-->
-         
-        
-    
+
+
         </div>
+        <!-- end of card-->
       </div>
-      <!--  EveryDay product items ends -->
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="lactogrow2">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/lactogrow/no2-200gm.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Lactogrow(3) 200 G</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="lactogrow3">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/lactogrow/no3-400g.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Lactogrow(3) 400 G</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="lactogrow4">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/lactogrow/no4-1.3kg.jpg " class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Lactogrow(3) 1.3 KG</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="lactogrow5">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/lactogrow/no5-1kg.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Lactogrow(4) 1 KG</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="lactogrow6">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/lactogrow/no6-350gm.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Lactogrow(3) 350 G</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+
+
+
+    </div>
+
+    <!--  Lactogrow product items ends -->
+
+    <!-- EveryDay product items start -->
+    <h1 class="container-fluid" style="text-align: center;padding-top: 3%;">EveryDay</h1>
+    <div class="container-fluid row store-items" id="cerelac">
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="everyday1">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/everyday/no1-850g.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">EveryDay 850 G</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="everyday2">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/everyday/no2-230g.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">EveryDay 230 G</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="everyday3">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/everyday/no3-560g.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">EveryDay 560 G</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="everyday4">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/everyday/no4-350g.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">EveryDay 350 G</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="everyday5">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/everyday/no5-1.8kg.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">EveryDay 1.8 KG</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="everyday6">
+        <div class="card ">
+          <div class="img-container">
+            <img src="./storeimages/everyday/no6-1.2kg.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">EveryDay 1.2 KG</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+
+
+
+    </div>
+  </div>
+  <!--  EveryDay product items ends -->
 
   <script src="js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>

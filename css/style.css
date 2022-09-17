@@ -4,6 +4,8 @@
 }
 body{
     font-family: myfont;
+    margin: 0%;
+    padding: 0%;
 }
 :root {
     --mainPink: #fa99b3;
@@ -22,12 +24,10 @@ body{
 .navbar{
     font-size: 1.5rem;
 }
-
-
 .navbar-nav a{
     color: var(--mainPink);
-    padding-left: 20%;
-    margin-right: 30px;
+    padding-left: 10%;
+    margin-right: 40px;
 }
 .navbar-nav a:hover{
     color: red;
@@ -38,6 +38,8 @@ body{
 /* cart */
 .cart-icon{
     color: var(--mainPink);
+    margin: 0%;
+    padding: 0%;
 }
 .cart-box{
     width: 35%;
@@ -191,9 +193,9 @@ margin-top: 2%;
   .img-container:hover .store-item-icon {
     transform: translate(0, 0);
   }
-  .store-item-icon:hover {
+  /* .store-item-icon:hover {
     color: var(--mainWhite);
-  }
+  } */
   .store-item-value {
     color: --mainYellow;
   }

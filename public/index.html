@@ -1,89 +1,202 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.10.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.10.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.10.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.10.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.10.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.10.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.10.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.10.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.10.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.10.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <!-- my css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Nestle</title>
+</head>
+
+<body class="container-fluid">
+
+    <!-- header starts -->
+    <header>
+        <!-- navbar starts -->
+        <div>
+            <div class="navbar navbar-expand-lg px-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav"
+                        aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynav">
+                        <div class="navbar-nav linkhead">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="store.html">Store</a>
+                            <div class="contact d-lg-flex ">
+                                <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone"></i></a>
+                                <a class="nav-link" href="#"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </nav>
+        <!-- navbar ends -->
+
+        <!-- banner starts -->
+
+
+        <div class=" container-fluid banner text-center d-lg-block">
+            <div class="col-12 img">
+                <div class="banner-content ">
+                    <h1 class="display-5 pt-5">Welcome to <span class="banner-text ">Nestle Store</span></h1>
+                    <a href="store.html" class="btn text-uppercase">explore</a>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- banner ends -->
+    </header>
+    <!-- header ends -->
+    <!-- store section starts -->
+    <div class="container-fluid store bg-light">
+        <div class="row py-5 text-center">
+            <h1>Our <span class="title">Stores</span> </h1>
+        </div>
+        <!-- filter logos start -->
+        <div class="row">
+            <div class="col-lg-8 col-md-3 col-sm-2 mx-auto d-flex justify-content-between my-2 sortBtn flex-wrap">
+                <a href="store.html" class="filter m-2" data-filter="cakes"><img src="images/nestle-cerelac-brand-logo-v4.png"
+                        width="100px" alt=""></a>
+                <a href="store.html" class="filter m-2" data-filter="cupcakes"><img src="images/everyday-new-logo.png"
+                        width="100px" alt=""> </a>
+                <a href="store.html" class="filter m-2" data-filter="sweets"><img src="images/LACTOGROW_400x400.png"
+                        width="100px" alt=""> </a>
+                <a href="store.html" class="filter m-2" data-filter="doughnuts"><img src="images/pure-life-logo-round.png"
+                        width="100px" alt=""></a>
+            </div>
+        </div>
+        <!-- filter logos end -->
+
+
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+    <!-- FeedbackStart -->
+    <div class="review section container-fluid" id="testimonial">
+        <h1 style="color: brown;">Our Customers<span class="title"> Feedback</span> </h1>
+        
+        <div class="box-container1 row">
+
+            <div class="box1 ">
+                <i><img src="./feedbackimage/1.png" alt=""></i>
+                <h3>Emma Dee</h3>
+                <h4>App developer</h4>
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+
+                <div class="stars">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, error fugit. Iure, id odit
+                    reiciendis.</p>
+
+            </div>
+
+            <div class="box1">
+                <i><img src="./feedbackimage/2.png" alt=""></i>
+                <h3>andrew watt</h3>
+                <h4>Graphics designer</h4>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <div class="stars">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+
+
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, error fugit. Iure, id odit
+                    reiciendis.</p>
+
+            </div>
+
+            <div class="box1">
+                <i><img src="./feedbackimage/3.png" alt=""></i>
+                <h3>Olivia Smith</h3>
+                <h4>web developer</h4>
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                <div class="stars">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, error fugit. Iure, id odit
+                    reiciendis.</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- FeedbackEnd -->
+<!-- Contact Page Start -->
+    <div class="container-fluid store bg-light" id="contact">
+        <div class="row py-5 text-center">
+            <h1>Contact <span class="title">Us</span> </h1>
+            <h4>Get in touch for latest updates</h4>
+        </div>
+       
+        <div class="row text-center">
+            <div class="col-12" >
+                <form action="">
+
+                    <input type="text" placeholder="name*" class="box">
+                    <input type="email" name="email" placeholder="email*" class="box">
+                    <textarea name="" placeholder="write your message*" id="" cols="40" rows="5"></textarea>
+                    <div class="buton">
+                        <a href="#" class="further">Send Message</a>
+                    </div>
+
+
+                </form>
+            </div>
+            </div>
+         <!-- Contact page -->
+
+
+
+        </div>
+        <!-- Contact Page End -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
 </html>
